@@ -27,7 +27,7 @@ void draw() {
   
   //drawCircles(trfrRegion, trfrSviRefugee);
   
-  drwaMyImplementation();
+  drawMyImplementation();
 }
 
 
@@ -35,7 +35,7 @@ void loadMyImplementation() {
   
 }
 
-void drwaMyImplementation() {
+void drawMyImplementation() {
   
 }
 
