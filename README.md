@@ -9,6 +9,7 @@ In dit bestand wordt de ’Search Value Index’ gebruikt. Deze index geeft de w
 De belangrijkste bestanden uit het project zijn:
 
 hackathon_processing.pde - Dit is het processing bestand dat de visualisatie uitvoert. Implementeer hier loadMyImplementation en drawMyImplementation om de visualisatie te maken.
+
 data.pde - Dit is de plek waar alle data geladen wordt. Deze wordt aangeroepen vanuit de hackathon_processing.pde.
 
 Er zijn twee voorbeelden geimplementeerd: de line chart en de cirkel chart. Voor het line chart voorbeeld is de giCentre plugin nodig.
@@ -19,98 +20,83 @@ Hieronder staat een lijst van de uitgevoerde zoekopdrachten. Per categorie wordt
 
 Het aantal keer dat er per dag naar de term ‘refugee’ of ‘migrant’ is gezocht.
 
-De datum waarop de zoektermen zijn uitgevoerd:
-ArrayList<String> iotDay
-
-De Search Value Index van de zoekopdrachten naar ‘migrant':
-ArrayList<Float> iotSviMigrant
-
-De Search Value Index van de zoekopdrachten naar ‘refugee':
-ArrayList<Float> iotSviRefugee
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|iotDay       |ArrayList\<String>|De datum waarop de zoektermen zijn uitgevoerd|
+|iotSviMigrant|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘migrant'|
+|iotSviRefugee|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘refugee'|
 
 <b>Top regions for migrant</b>
 
 De regio waar het meest naar de term ‘migrant’ is gezocht.
 
-De regio waarin de zoekopdrachten zijn uitgevoerd:
-ArrayList<String> trfmRegion
-
-De Search Value Index van de zoekopdrachten naar ‘migrant':
-ArrayList<Float> trfmSviMigrant
-
-De Search Value Index van de zoekopdrachten naar ‘refugee':
-ArrayList<Float> trfmSviRefugee
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|trfmRegion|ArrayList\<String>|De regio waarin de zoekopdrachten zijn uitgevoerd|
+|trfmSviMigrant|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘migrant'|
+|trfmSviRefugee|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘refugee'|
 
 <b>Top regions for refugee</b>
 
 De regio waar het meest naar de term ‘refugee’ is gezocht.
 
-De regio waarin de zoekopdrachten zijn uitgevoerd:
-ArrayList<String> trfrRegion
-
-De Search Value Index van de zoekopdrachten naar ‘migrant':
-ArrayList<Float> trfrSviMigrant
-
-De Search Value Index van de zoekopdrachten naar ‘refugee':
-ArrayList<Float> trfrSviRefugee
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|trfrRegion|ArrayList\<String>|De regio waarin de zoekopdrachten zijn uitgevoerd|
+|trfrSviMigrant|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘migrant'|
+|trfrSviRefugee|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘refugee'|
 
 <b>Top cities for migrant</b>
 
 De stad waar het meest naar de term ‘migrant’ is gezocht.
 
-De stad waarin de zoekopdrachten zijn uitgevoerd:
-ArrayList<String> tcfmCity
-
-De Search Value Index van de zoekopdrachten naar ‘migrant':
-ArrayList<Float> tcfmSviMigrant
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|tcfmCity|ArrayList\<String>|De stad waarin de zoekopdrachten zijn uitgevoerd|
+|tcfmSviMigrant|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘migrant'|
 
 <b>Top cities for refugee</b>
 
 De stad waar het meest naar de term ‘refugee’ is gezocht.
 
-De stad waarin de zoekopdrachten zijn uitgevoerd:
-ArrayList<String> tcfrCity
-
-De Search Value Index van de zoekopdrachten naar ‘refugee':
-ArrayList<Float> tcfrSviRefugee
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|tcfrCity|ArrayList\<String>|De stad waarin de zoekopdrachten zijn uitgevoerd|
+|tcfrSviRefugee|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘refugee'|
 
 <b>Top searches for migrant</b>
 
 De meest voorkomende zoekopdrachten voor ‘migrant’.
 
-De gebruikte zoektermen:
-ArrayList<String> tsfmSearchTerm
-
-De Search Value Index van de zoekopdrachten naar ‘migrant':
-ArrayList<Float> tsfmSviMigrant
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|tsfmSearchTerm|ArrayList\<String>|De gebruikte zoektermen|
+|tsfmSviMigrant|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘migrant'|
 
 <b>Top searches for refugee</b>
 
 De meest voorkomende zoekopdrachten voor ‘refugee’.
 
-De gebruikte zoektermen:
-ArrayList<String> tsfrSearchTerm
-
-De Search Value Index van de zoekopdrachten naar ‘refugee':
-ArrayList<Float> tsfrSviRefugee
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|tsfrSearchTerm|ArrayList\<String>|De gebruikte zoektermen|
+|tsfrSviRefugee|ArrayList\<Float>|De Search Value Index van de zoekopdrachten naar ‘refugee'|
 
 <b>Rising searches for migrant</b>
 
 De stijging van de zoekresultaten naar ‘migrant’.
 De waarde breakout wil zeggen dat de zoekresultaten met meer dan 5000% gestegen zijn.
 
-De gebruikte zoekterm:
-ArrayList<String> rsfmSearchTerm
-
-Het stijgingspercentage:
-ArrayList<String> rsfmPercentage
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|rsfmSearchTerm|ArrayList\<String>|De gebruikte zoekterm|
+|rsfmPercentage|ArrayList\<String>|Het stijgingspercentage|
 
 <b>Rising searches for refugee</b>
 
 De stijging van de zoekresultaten naar ‘refugee’.
 
-De gebruikte zoekterm:
-ArrayList<String> rsfrSearchTerm
-
-Het stijgingspercentage:
-ArrayList<String> rsfrPercentage
+|Naam Variabele|Type|Omschrijving Variabele|
+|:---|:---|:---|
+|rsfrSearchTerm|ArrayList\<String>|De gebruikte zoekterm|
+|rsfrPercentage|ArrayList\<String>|Het stijgingspercentage|
