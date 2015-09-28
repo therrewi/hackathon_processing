@@ -8,12 +8,12 @@ In dit bestand wordt de ’Search Value Index’ gebruikt. Deze index geeft de w
 
 De belangrijkste bestanden uit het project zijn:
 
-hackathon_processing.pde - Dit is het processing bestand dat de visualisatie uit voert. Implementeer hier loadMyImplementation en drwaMyImplementation om de visualisatie te maken.
+hackathon_processing.pde - Dit is het processing bestand dat de visualisatie uitvoert. Implementeer hier loadMyImplementation en drawMyImplementation om de visualisatie te maken.
 data.pde - Dit is de plek waar alle data geladen wordt. Deze wordt aangeroepen vanuit de hackathon_processing.pde.
 
-Er zijn twee voorbeelden geimplemnteerd: de line chart en de cirkelchart. Voor het line chart voorbeeld is de giCentre plugin nodig.
+Er zijn twee voorbeelden geimplementeerd: de line chart en de cirkel chart. Voor het line chart voorbeeld is de giCentre plugin nodig.
 
-Hier onder een lijst van de uitgevoerde zoekopdrachten. Per categorie wordt er vermeld welke mogelijke variabelen te gebruiken zijn. Dit zijn de variabelen die in het Processing project gebruikt kunnen worden om de visualisaties te creëren.
+Hieronder staat een lijst van de uitgevoerde zoekopdrachten. Per categorie wordt er vermeld welke mogelijke variabelen te gebruiken zijn. Dit zijn de variabelen die in het Processing project gebruikt kunnen worden om de visualisaties te creëren.
 
 <b>Interest over time</b>
 
