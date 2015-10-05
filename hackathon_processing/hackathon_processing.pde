@@ -11,34 +11,17 @@ void setup() {
   // Load the data sets into the lists
   loadData();
   
-  //size(1000,400);
   size(700,700);
   
   font = createFont("Arial",16,true);
   
   //loadLineChart();
-  
-  loadMyImplementation();
 }
 
 // Draws the chart and a title
 void draw() {
-  //drawLineChart();
-  
-  //drawCircles(trfrRegion, trfrSviRefugee);
-  
-  drawMyImplementation();
+  drawCircles(trfrRegion, trfrSviRefugee);
 }
-
-
-void loadMyImplementation() {
-  
-}
-
-void drawMyImplementation() {
-  
-}
-
 
 void drawCircles(final ArrayList<String> descriptions, final ArrayList<Float> values) {
   float cx = width/2;
@@ -82,42 +65,4 @@ void drawCircles(final ArrayList<String> descriptions, final ArrayList<Float> va
 
 void circle(float x, float y, float size) {
   ellipse(x,y,size, size);
-}
-
-
-void loadLineChart() {
-  textFont(createFont("Arial",10),10);
- 
-  // Both x and y data set here
-  lineChart = new XYChart(this);
-  lineChart.setData(
-    iotGiDateDataList,
-    iotGiRefugeeDataList
-  );
-  
-  // Axis formatting and labels
-  lineChart.showXAxis(true); 
-  lineChart.showYAxis(true); 
-  lineChart.setMinY(0);
-  lineChart.setMinX(iotGiDateDataList[0]);
-  
-  lineChart.showXAxis(false);
-  
-  // Symbol colours
-  lineChart.setPointColour(color(180,50,50,100));
-  lineChart.setPointSize(5);
-  lineChart.setLineWidth(2);
-}
-
-void drawLineChart() {
-  background(255);
-  textSize(9);
-  lineChart.draw(15,15,width-30,height-30);
-   
-  // Draw a title over the top of the chart
-  fill(120);
-  textSize(20);
-  text("Web Search interest: migrant; refugee", 70,30);
-  textSize(11);
-  text("Worldwide; Past 30 days", 70, 45);
 }
